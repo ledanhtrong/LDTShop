@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  /*Display and Box model*/
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  min-height: 100%;
+  /*Text*/
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /*Color*/
+  background: #fff;
+}
+
+.content-area {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: calc(100% - 50px);
+  margin-top: 50px;
+  /*Color*/
+  background: #fff;
+}
+
+.content-area .view-cart-area {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 90%;
+  max-width: 1200px;
+  min-width: 600px;
+  height: 100%;
+  padding: 40px 12px 0 12px;
+  /*Color*/
+  background: #fff;
+}
+
+.content-area .view-cart-area .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+}
+
+.content-area .view-cart-area .head h1 {
+  /*Color*/
+  color: #36474f;
+  /*Text*/
+  font-size: 3rem;
+}
+
+.content-area .view-cart-area .head a {
+  /*Display and Box model*/
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 24px;
+  /*Color*/
+  color: #fff;
+  background: #ff7b00;
+  /*Text*/
+  text-decoration: none;
+}
+
+.content-area .view-cart-area .head a:hover,
+.content-area .view-cart-area .head a:focus {
+  cursor: pointer;
+  background: #ff651e;
+}
+
+.content-area .view-cart-area .row {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  width: 100%;
+  height: 5rem;
+  margin: 1rem 0;
+  /*Effect*/
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content-area .view-cart-area .row .td {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 16%;
+}
+
+.content-area .view-cart-area .row .td:nth-child(1),
+.content-area .view-cart-area .row .td:nth-child(2) {
+  width: 8%;
+}
+
+.content-area .view-cart-area .row .remove-button {
+  /*Display and Box model*/
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 12px 24px;
+  /*Color*/
+  color: #fff;
+  background-color: #ff4b2b;
+}
+
+.content-area .view-cart-area .row .remove-button:hover,
+.content-area .view-cart-area .row .remove-button:focus {
+  /*Color*/
+  cursor: pointer;
+  background: #f02112;
+}
+
+.content-area .view-cart-area .last-row {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+  /*Effect*/
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content-area .view-cart-area .last-row .td {
+  /*Display and Box model*/
+  margin-right: 20%;
+  /*Text*/
+  font-weight: 600;
+}
+
+.content-area .view-cart-area .empty {
+  /*Display and Box model*/
+  display: inline-block;
+  width: 100%;
+  /*Color*/
+  color: #000;
+  /*Text*/
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.nav-left a.cart {
+  /*Color*/
+  border-bottom: 1px solid #fff;
+  background: #11998e !important;
+  /*Text*/
+  font-weight: 600 !important;
+}
+/*# sourceMappingURL=viewCart.css.map */

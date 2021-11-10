@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/LDTShop">
+    <Resource
+        name="ASM" type="javax.sql.DataSource" auth="Container"
+        classDriverName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+        url="jdbc:sqlserver://localhost:1433;databaseName=ASM"
+        username="sa" password="123456"
+    />
+
+</Context>

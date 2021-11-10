@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  /*Display and Box model*/
+  min-width: 100%;
+  min-height: calc(100vh - 50px);
+  /*Text*/
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /*Color*/
+  background: #fff;
+}
+
+.content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  min-width: 1000px;
+  height: 100%;
+  min-height: calc(100vh - 50px);
+  background-color: antiquewhite;
+}
+
+.content-area .order-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 2rem;
+  width: 600px;
+  min-width: 600px;
+  border-radius: 10px;
+  padding: 24px;
+  border: 1px solid #44A08D;
+  background: #fff;
+}
+
+.content-area .order-area h1 {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.content-area .order-area .deliver-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.content-area .order-area .deliver-detail h2 {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.content-area .order-area .deliver-detail .information {
+  width: 60%;
+  margin: 0.5rem 0;
+}
+
+.content-area .order-area .deliver-detail .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.content-area .order-area .deliver-detail .buttons a {
+  outline: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3rem;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.content-area .order-area .deliver-detail .buttons .confirm {
+  color: #ffffff;
+  background: #11998e;
+  width: 49%;
+}
+
+.content-area .order-area .deliver-detail .buttons .confirm:hover,
+.content-area .order-area .deliver-detail .buttons .confirm:focus {
+  background: #0e7a71;
+}
+
+.content-area .order-area .deliver-detail .buttons .cancel {
+  width: 49%;
+  color: #ffffff;
+  background-color: #ccc;
+}
+
+.content-area .order-area .details-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.content-area .order-area .details-table h2 {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.content-area .order-area .details-table .row {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  width: 100%;
+  height: 3rem;
+  /*Effect*/
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content-area .order-area .details-table .row .td {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 16%;
+}
+
+.content-area .order-area .details-table .row .td:nth-child(1),
+.content-area .order-area .details-table .row .td:nth-child(2) {
+  width: 8%;
+}
+
+.content-area .order-area .details-table .row:last-child .td {
+  width: 100%;
+}
+
+.content-area .pop-up-background {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content-area .pop-up-background .pop-up {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  border-radius: 3px;
+  width: 600px;
+  padding: 1rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.content-area .pop-up-background .pop-up .information {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: justify;
+}
+
+.content-area .pop-up-background .pop-up .notice {
+  margin-top: 2rem;
+  color: #155799;
+}
+/*# sourceMappingURL=payment.css.map */

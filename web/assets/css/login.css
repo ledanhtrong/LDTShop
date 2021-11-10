@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  /*Color*/
+  background: #fff;
+  /*Text*/
+  font-family: sans-serif;
+}
+
+.content {
+  /*Positioning*/
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 360px;
+}
+
+.content .logo {
+  width: 100px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.content .login-box {
+  background: #fff;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  border-radius: 8px;
+  width: 100%;
+  padding: 16px 24px;
+}
+
+.content .login-box h1 {
+  /*Display and Box model*/
+  width: 100%;
+  margin-bottom: 40px;
+  /*Text*/
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.content .login-box form {
+  width: 100%;
+}
+
+.content .login-box .control {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 100%;
+  /*Text*/
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.content .login-box .control input {
+  /*Display and Box model*/
+  outline: none;
+  border: 0.5px solid #000;
+  border-radius: 8px;
+  width: 100%;
+  line-height: 1.5rem;
+  height: 2rem;
+  padding: 0 8px;
+  margin-top: 4px;
+  /*Text*/
+  font-size: 1rem;
+}
+
+.content .login-box .control input:hover,
+.content .login-box .control input:focus {
+  /*Display and Box model*/
+  border: 2px solid #c89411;
+}
+
+.content .login-box .error-message {
+  /*Display & Box model*/
+  margin-bottom: 12px;
+  /*Color*/
+  color: #ff0033;
+  /*Text*/
+  font-size: 0.8rem;
+}
+
+.content .login-box .button {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.content .login-box .button input {
+  /*Display and Box model*/
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 2rem;
+  padding: 8px 20px;
+  margin-bottom: 12px;
+  /*Color*/
+  color: #000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7ca58), color-stop(#f8b500), to(#f1c75a));
+  background: linear-gradient(180deg, #f7ca58, #f8b500, #f1c75a);
+}
+
+.content .login-box .button input:hover,
+.content .login-box .button input:focus-within {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8b500), color-stop(#c89411), to(#c89411));
+  background: linear-gradient(180deg, #f8b500, #c89411, #c89411);
+}
+
+.content .login-box .links {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+}
+
+.content .login-box .links .bottom-link {
+  /*Display and Box model*/
+  outline: none;
+  width: 100%;
+  /*Color*/
+  color: #00c;
+  /*Text*/
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.content .login-box .links .bottom-link:hover,
+.content .login-box .links .bottom-link:focus {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    /*Positioning*/
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    /*Display and Box model*/
+    width: 100%;
+    min-width: 200px;
+    border: none;
+    border-radius: 0;
+    /*Color*/
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .content .logo {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=login.css.map */

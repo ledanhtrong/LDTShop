@@ -1,0 +1,697 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /*Display and Box model*/
+  width: 100%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  height: 100%;
+  /*Text*/
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /*Color*/
+  background: #ece9e6;
+}
+
+.content-area {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  min-width: 1000px;
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.content-area nav {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  border: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: hidden;
+  width: 200px;
+  min-width: 200px;
+  height: 100%;
+  /*Color*/
+  background: linear-gradient(120deg, #11998e, #11998e, #38ef7d);
+}
+
+.content-area nav form {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px 0 12px 12px;
+}
+
+.content-area nav form input {
+  /*Display and Box model*/
+  outline: none;
+  border: none;
+  background: none;
+  justify-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 95%;
+  height: 3rem;
+  padding: 12px 24px;
+  /*Color*/
+  color: #ece9e6;
+  /*Text*/
+  font-weight: 600;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.content-area nav form input:hover,
+.content-area nav form input:target,
+.content-area nav form .active {
+  /*Display and Box model*/
+  border-radius: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 8px 0 white;
+          box-shadow: 0 0 8px 0 white;
+  /*Color*/
+  background: #ffffff;
+  color: #000;
+}
+
+.content-area .content {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0 8px 8px 0;
+  width: 100%;
+  height: 100%;
+  /*Color*/
+  background: #ffffff;
+}
+
+.content-area .content .profile-box {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+  padding: 12px 24px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.content-area .content .profile-box form {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+}
+
+.content-area .content .profile-box h1 {
+  /*Display and Box model*/
+  width: 100%;
+  margin: 1rem 0;
+  /*Text*/
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.content-area .content .profile-box .row {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  margin: 4px 0;
+  /*Effect*/
+  -webkit-box-shadow: 0 1px 0 1px rgba(112, 119, 134, 0.2), 0 1px 1px 2px rgba(75, 108, 183, 0.19);
+          box-shadow: 0 1px 0 1px rgba(112, 119, 134, 0.2), 0 1px 1px 2px rgba(75, 108, 183, 0.19);
+  /*Color*/
+  background: #fff;
+}
+
+.content-area .content .profile-box .row .col-1 {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-area .content .profile-box .row .col-2 {
+  width: 60%;
+}
+
+.content-area .content .profile-box .row .col-3 {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 1rem;
+}
+
+.content-area .content .profile-box .confirm {
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.content-area .content .profile-box input.col-2 {
+  /*Display and Box model*/
+  border: none;
+  outline: none;
+  background: none;
+  height: 2.5rem;
+  padding-left: 8px;
+  border-bottom: 1px solid #1271b1;
+  background: #fff;
+  /*Text*/
+  font-size: 1.2rem;
+}
+
+.content-area .content .profile-box form input.col-2:hover,
+.content-area .content .profile-box form input.col-2:focus,
+.content-area .content .profile-box form input.col-2:not(:placeholder-shown) {
+  /*Color*/
+  border-bottom: 2px solid #1271b1;
+}
+
+.content-area .content .profile-box form input.col-3 {
+  /*Display and Box model*/
+  outline: none;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 3px;
+  /*Color*/
+  background: #c2cbd6;
+}
+
+.content-area .content .profile-box form input.col-3:not(:disabled) {
+  /*Color*/
+  color: #fff;
+  background: #294666;
+}
+
+.content-area .content .profile-box form input.col-3:hover:not(:disabled),
+.content-area .content .profile-box form input.col-3:focus:not(:disabled) {
+  /*Display and Box model*/
+  cursor: pointer;
+  /*Color*/
+  background: #141e30;
+}
+
+.content-area .content .profile-box .error-message {
+  /*Display & Box model*/
+  margin-bottom: 12px;
+  /*Color*/
+  color: #ff0033;
+  /*Text*/
+  font-size: 0.8rem;
+}
+
+.content-area .content .account-mgmt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  padding: 12px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.content-area .content .account-mgmt h1 {
+  width: 100%;
+  padding: 12px 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 2.5rem;
+  font-family: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.content-area .content .account-mgmt form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.content-area .content .account-mgmt form .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.content-area .content .account-mgmt form .control input {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  width: 500px;
+  height: 2.5rem;
+  padding: 0 12px;
+  margin: 12px 0;
+  color: #000;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(41, 70, 102, 0.4);
+          box-shadow: 0 1px 3px 0 rgba(41, 70, 102, 0.4);
+  font-size: 1rem;
+}
+
+.content-area .content .account-mgmt form .control input:focus-within,
+.content-area .content .account-mgmt form .control input:hover,
+.content-area .content .account-mgmt form .control input:not(:placeholder-shown) {
+  -webkit-box-shadow: 0 1px 3px 0 #2946668c;
+          box-shadow: 0 1px 3px 0 #2946668c;
+}
+
+.content-area .content .account-mgmt form .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: nowrap row;
+          flex-flow: nowrap row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.content-area .content .account-mgmt form .button input {
+  border: none;
+  border-radius: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  width: 100px;
+  height: 2.5rem;
+  margin: 0 20px 12px 0;
+  color: #fff;
+  background: #294666;
+}
+
+.content-area .content .account-mgmt form .button input:hover,
+.content-area .content .account-mgmt form .button input:focus {
+  cursor: pointer;
+  background: #141e30;
+}
+
+.content-area .content .account-mgmt .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  padding: 8px;
+}
+
+.content-area .content .account-mgmt .table .tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content-area .content .account-mgmt .table .tr .th,
+.content-area .content .account-mgmt .table .tr .td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 15%;
+  min-height: 2.5rem;
+  word-break: break-all;
+}
+
+.content-area .content .account-mgmt .table .tr .th:nth-child(1),
+.content-area .content .account-mgmt .table .tr .td:nth-child(1) {
+  width: 10%;
+}
+
+.content-area .content .account-mgmt .table .thead {
+  background: #ddd;
+}
+
+.content-area .content .process-update {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 8px;
+  width: 400px;
+  /*Color*/
+  -webkit-box-shadow: 0px 0 2px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0 2px 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.content-area .content .process-update .updated-account {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 100%;
+  max-width: 600px;
+  padding: 12px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.content-area .content .process-update .updated-account form {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  max-width: 600px;
+}
+
+.content-area .content .process-update .updated-account form .col-1 {
+  width: 100%;
+  height: 2rem;
+}
+
+.content-area .content .process-update .updated-account form input.col-2 {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  width: 75%;
+  height: 2.5rem;
+  padding: 0 4px;
+}
+
+.content-area .content .process-update .updated-account form input.col-3 {
+  /*Display and Box model*/
+  outline: none;
+  border: none;
+  height: 80%;
+  border-radius: 4px;
+  width: 20%;
+  height: 2rem;
+  /*Color*/
+  color: #000;
+  background: #c2cbd6;
+}
+
+.content-area .content .process-update .updated-account form input.col-3:not(:disabled) {
+  cursor: pointer;
+  color: #ffffff;
+  background: #141e30;
+}
+
+.content-area .content .process-update .updated-account form .confirm {
+  display: none;
+}
+
+.content-area .content .process-update .updated-account .row {
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 600px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 12px;
+}
+
+.content-area .content .process-update .updated-account .error-message {
+  /*Display & Box model*/
+  margin-bottom: 12px;
+  word-wrap: break-word;
+  width: 100%;
+  /*Color*/
+  color: #ff0033;
+  /*Text*/
+  font-size: 0.8rem;
+}
+
+.content-area .content .process-update .updated-account .bottom-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.content-area .content .process-update .updated-account .bottom-button .delete-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  width: 150px;
+  height: 2.5rem;
+  margin-top: 12px;
+  background: -webkit-gradient(linear, left top, right top, from(#ff416c), to(#ff4b2b));
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.content-area .content .process-update .updated-account .bottom-button .delete-button:hover,
+.content-area .content .process-update .updated-account .bottom-button .delete-button:focus {
+  background: -webkit-gradient(linear, left top, right top, from(#f00000), to(#dc281e));
+  background: linear-gradient(90deg, #f00000, #dc281e);
+}
+
+.content-area .content .process-update .updated-account .bottom-button .cancel-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  width: 150px;
+  height: 2.5rem;
+  margin-top: 12px;
+  background: #ddd;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=dashboard.css.map */

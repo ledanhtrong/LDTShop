@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /*Display and Box model*/
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow-y: visible;
+  /*Text*/
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /*Color*/
+  background: #ffffff;
+}
+
+.content-area {
+  /*Display and Box model*/
+  margin-top: 50px;
+  width: 100%;
+  height: calc(100vh - 50px);
+  /*Color*/
+  background: linear-gradient(135deg, #acb6e5, #86fde8);
+}
+
+.content-area .content {
+  width: 100%;
+  height: 100%;
+  /*Color*/
+}
+
+.content-area .content .welcome-message {
+  /*Positioning*/
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /*Display and Box model*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 100%;
+  height: 100%;
+}
+
+.content-area .content .welcome-message h1 {
+  /*Display and Box model*/
+  width: 80%;
+  /*Color*/
+  color: #000000;
+  /*Text*/
+  font-size: 4rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.content-area .content .welcome-message .shopping-link {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  height: 2.5rem;
+  width: 150px;
+  padding: 8px 20px;
+  border: 2px solid #BDFFF3;
+  /*Color*/
+  color: #fff;
+  background: linear-gradient(135deg, #4d92c0, #6959a7);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.content-area .content .welcome-message .shopping-link:hover,
+.content-area .content .welcome-message .shopping-link:focus {
+  background: linear-gradient(135deg, #2b93d8, #704fe4);
+}
+
+.nav-left .home {
+  /*Color*/
+  border-bottom: 1px solid #fff;
+  background: #11998e !important;
+  /*Text*/
+  font-weight: 600 !important;
+}
+/*# sourceMappingURL=home.css.map */
